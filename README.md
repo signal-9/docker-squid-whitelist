@@ -15,6 +15,8 @@ dns_nameservers 9.9.9.9            # DNS servers (change if you want)
 
 and ```/etc/squid/whitelist.txt```, adding or removing domains as you wish.  Any domains in this list will be reachable, any that are not will be denied.
 
+Once the container is running, you can edit these documents in ```/etc/squid``` as needed.  ```whitelist.txt``` will need the most adjusting.
+
 ```
 sudo docker built -t signaln9nesquidproxy .
 docker volume create squid
