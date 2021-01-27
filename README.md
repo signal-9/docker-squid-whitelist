@@ -5,6 +5,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/signal-9/docker-squid-whitelist?color=blue&style=for-the-badge)
 ![Docker Pulls](https://img.shields.io/docker/pulls/signaln9ne/squidproxy-strict-whitelist?style=for-the-badge)
 
+## Build the image
+
 ```
 git clone https://github.com/signal-9/docker-squid-whitelist.git
 cd docker-squid-whitelist
@@ -19,6 +21,8 @@ dns_nameservers 9.9.9.9            # DNS servers (change if you want)
 and ```/etc/squid/whitelist.txt```, adding or removing domains as you wish.  Any domains in this list will be reachable, any that are not will be denied.
 
 Once the container is running, you can edit these documents in ```/etc/squid``` as needed.  ```whitelist.txt``` will need the most adjusting.
+
+## Run the container
 
 ```
 sudo docker built -t signaln9nesquidproxy .
