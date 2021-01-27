@@ -2,6 +2,9 @@
 
 ## [Docker Hub Repository](https://hub.docker.com/r/signaln9ne/squidproxy-strict-whitelist)
 
+![GitHub last commit](https://img.shields.io/github/last-commit/signal-9/docker-squid-whitelist?color=blue&style=for-the-badge)
+![Docker Pulls](https://img.shields.io/docker/pulls/signaln9ne/squidproxy-strict-whitelist?style=for-the-badge)
+
 ```
 git clone https://github.com/signal-9/docker-squid-whitelist.git
 cd docker-squid-whitelist
@@ -30,6 +33,3 @@ docker run -dit \
 Point your client machines to the container IP port 3128.  Only approved domains in the ```whitelist.txt``` file should be accessible.
 
 You can ```tail -f /var/log/squid/access.log``` to see what domains are being approved, denied, etc.
-
-![GitHub last commit](https://img.shields.io/github/last-commit/signal-9/docker-squid-whitelist?color=blue&style=for-the-badge)
-![Docker Pulls](https://img.shields.io/docker/pulls/signaln9ne/squidproxy-strict-whitelist?style=for-the-badge)
