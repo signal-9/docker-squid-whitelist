@@ -25,7 +25,7 @@ Once the container is running, you can edit these documents in ```/etc/squid``` 
 ## Run the container
 
 ```
-sudo docker built -t signaln9nesquidproxy .
+sudo docker build -t signaln9nesquidproxy .
 docker volume create squid
 docker run -dit \
     -p 3128:3128 \
