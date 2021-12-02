@@ -5,6 +5,23 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/signal-9/docker-squid-whitelist?color=blue&style=for-the-badge)
 ![Docker Pulls](https://img.shields.io/docker/pulls/signaln9ne/squidproxy-strict-whitelist?style=for-the-badge)
 
+## docker-compose
+```
+---
+version: "3"
+services:
+  squidproxy:
+    image: signaln9ne/squidproxy-strict-whitelist:latest
+    container_name: squidproxy
+    volumes:
+      - squid-proxy:/config
+    ports:
+      - 3128:3128
+    restart: unless-stopped
+volumes:
+  squid-proxy:
+```
+
 ## Build the image
 
 ```
